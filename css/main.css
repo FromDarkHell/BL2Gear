@@ -1,0 +1,59 @@
+html,
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: #333 url("backgrounds\\background5.png") no-repeat fixed right center;
+	background-size: cover;
+	color: #eee;
+	font: 15pt/17pt Homenaje, Impact, sans-serif;
+	cursor: default;
+	text-align: center;
+}
+
+
+::-moz-selection {
+	color: black;
+	background: #FBB406;
+}
+
+::selection {
+  color: black;
+  background: #FBB406;
+}
+
+h1 {
+	margin: 2.5;
+	font-weight: bold;
+	color: rgb(255,123.5,0);
+	font: 45pt Homenaje, Impact, sans-serif;
+}
+
+bh1 {
+	font-weight: bold;
+	color: #FBB406;
+	font: 45pt Homenaje, Impact, sans-serif;
+}
+
+.leftalign {
+	position: absolute;
+	text-align: left;
+	text-indent: 130px;
+	text-decoration: underline;
+}
+
+.rightalign {
+	position: relative;
+	text-align: right;
+	padding-right: 130px;
+	text-decoration: underline;
+}

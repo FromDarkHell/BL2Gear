@@ -40,7 +40,7 @@ function decodeURL() {
 	// Gather our json file and assign the response to the variables.
 	$.ajax({
 		async: false,
-		url: '/ItemDataParts/WeaponNames.json',
+		url: 'BL2Gear/ItemDataParts/WeaponNames.json',
 		dataType: 'json',
 		success: function(response) {
 			try {
@@ -213,7 +213,7 @@ function createSearch(prefix, weaponOrItem, count, length, name, array, prefixUR
 
 	$.ajax({
 		async: false,
-		url: '/ItemDataParts/WeaponNames.json',
+		url: 'BL2Gear/ItemDataParts/WeaponNames.json',
 		dataType: 'json',
 		success: function(response) {
 			try {

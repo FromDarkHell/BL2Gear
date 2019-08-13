@@ -1,59 +1,107 @@
 html,
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-	min-height: 100vh;
-	margin: 0;
-	padding: 0;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	background: #333 url("backgrounds\\background5.png") no-repeat fixed right center;
-	background-size: cover;
-	color: #eee;
-	font: 15pt/17pt Homenaje, Impact, sans-serif;
-	cursor: default;
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #333 url("backgrounds\\background5.png") no-repeat fixed right center;
+    background-size: cover;
+    color: #eee;
+    font: 12pt/15pt Homenaje, Impact, sans-serif;
+    cursor: default;
+    text-align: center;
 }
 
-
 ::-moz-selection {
-	color: black;
-	background: #FBB406;
+    color: black;
+    background: #FBB406;
 }
 
 ::selection {
-  color: black;
-  background: #FBB406;
+    color: black;
+    background: #FBB406;
 }
 
 h1 {
-	margin: 2.5;
-	font-weight: bold;
-	color: rgb(255,123.5,0);
-	font: 45pt Homenaje, Impact, sans-serif;
+    margin: 2.5;
+    font-weight: bold;
+    color: rgb(255, 123.5, 0);
+    font: 45pt Homenaje, Impact, sans-serif;
 }
 
 bh1 {
-	font-weight: bold;
-	color: #FBB406;
-	font: 45pt Homenaje, Impact, sans-serif;
+    font-weight: bold;
+    color: #FBB406;
+    font: 35pt Homenaje, Impact, sans-serif;
 }
 
 .leftalign {
-	position: absolute;
-	text-align: left;
-	text-indent: 130px;
-	text-decoration: underline;
+    position: absolute;
+    text-align: left;
+    text-indent: 130px;
 }
 
 .rightalign {
-	position: relative;
-	text-align: right;
-	padding-right: 130px;
-	text-decoration: underline;
+    position: absolute;
+    text-align: right;
+    right: 130px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: gray;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.autocomplete-items {
+    position: absolute;
+    z-index: 99;
+    border-bottom: none;
+    border-top: none;    
+}
+
+.autocomplete-items div {
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    z-index: 99;
+    background-color: gray;
+    text-decoration-color: gray;
+    color: #FBB406;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+    text-decoration-color: black;
+}
+
+.autocomplete-active {
+    background-color: #e9e9e9 !important;
+    color: black;
+}
+
+.permalink {
+    position: relative;
+    bottom: 40px;
+    text-align: right;
+    left: 180px;
+    color: rgb(255, 255, 255);
+    font: 18.5pt Homenaje, Impact, sans-serif;
 }
